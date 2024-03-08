@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The interior design</title>
+    <link rel="stylesheet" href="tem.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="toggle-nav-bar" id="navbar_toggle">
+        <div class="close" id="hide_navbar_btn" onclick="handleHideNavbar()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About US</a></li>
+          <li><a href="#">Service</a></li>
+        </ul>
+      </div>
+      <div class="submit" id="form">
+        <div class="form-box">
+          <div class="icn" id="submit_ex" onclick="handleCloseForm()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="heading">
+            <h1>Contact Us</h1>
+          </div>
+          <div class="inp">
+            <input type="text" placeholder="Enter your name" id="name_input" />
+
+            <p id="name-alert">Name must be greater then 3 characters</p>
+
+            <div class="password-input">
+              <input
+                type="password"
+                placeholder="Enter strong password"
+                id="password"
+              />
+              <div class="password-icon" onclick="handlePasswordVisibility()">
+                <i class="fa-solid fa-eye" id="eye_icon"></i>
+              </div>
+              <!-- <i class="fa-solid fa-eye-slash"></i> -->
+            </div>
+            <div class="password-input">
+              <input
+                type="password"
+                placeholder="Confirm password"
+                id="confirm_password"
+              />
+              <div class="password-icon" onclick="handleConfirmPasswordLock()">
+                <i class="fa-solid fa-lock" id="confirm_password_icon"></i>
+                <!-- <i class="fa-solid fa-unlock"></i> -->
+              </div>
+            </div>
+
+            <p id="password-alert">Password must be greater than 5 characters</p>
+            <p id="confirm-password-alert">Password is not matching</p>
+            
+          </div>
+          <div class="btn">
+            <button onclick="handleFormSubmit()">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="down-arrow-container">
+        <div class="arow" id="Down_Arrow" onclick="handleScrollDown()">
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+      </div>
+      <div class="arrow-btn" id="arrow_btn" onclick="handleScrollTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+      <nav>
+        <div class="logo" id="logo_nav">
+          <div class="ic">
+            <h4>n</h4>
+
+            <div class="text">
+              <h3>nicepage</h3>
+            </div>
+          </div>
+          <div class="pc">
+            <div><i class="fa-solid fa-desktop"></i></div>
+            <div><i class="fa-solid fa-laptop"></i></div>
+            <div><i class="fa-solid fa-tablet-screen-button"></i></div>
+            <div><i class="fa-solid fa-mobile-screen-button"></i></div>
+          </div>
+          <div class="cro" id="cross" onclick="handleCrossButton()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="log">
+          <div class="lg">
+            <h1>logo</h1>
+          </div>
+          <div class="ic" id="show_navbar_btn" onclick="handleShowNavbar()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="box-1">
+        <div class="image">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/011/278/034/large_2x/girl-sitting-on-floor-in-front-of-laptop-in-lotus-pose-and-listening-to-tranquil-music-in-airpods-photo.JPG"
+            alt="#"
+          />
+        </div>
+        <div class="phera">
+          <div class="ph">
+            <h1>The full-Service<br />interior desgin <br />studio</h1>
+            <h4>image from <span>Freepik</span></h4>
+          </div>
+          <div class="link">
+            <div class="link-1">
+              <i class="fa-solid fa-caret-right"></i>
+              <h3>Duis aute irure dolor</h3>
+            </div>
+            <div class="link-2">
+              <i class="fa-solid fa-caret-right"></i>
+              <h3>Ut enim ad minim</h3>
+            </div>
+          </div>
+          <div class="btn" id="but" onclick="handleContactUs()">
+            <button>Contact US</button>
+          </div>
+        </div>
+      </div>
+      <div class="box-2">
+        <div class="icons">
+          <div class="phera">
+            <h1>
+              We belive the most <br />beautiful spaces are<br />those with
+              soul.
+            </h1>
+            <h3>Image from <span>Freepik</span></h3>
+          </div>
+          <div class="icon">
+            <div>
+              <i class="fa-solid fa-swatchbook"></i>
+              <h2>DESIGN</h2>
+            </div>
+            <div>
+              <i class="fa-brands fa-deezer"></i>
+              <h2>PLANING</h2>
+            </div>
+            <div>
+              <i class="fa-solid fa-couch"></i>
+              <h2>INTERIOR</h2>
+            </div>
+            <div>
+              <i class="fa-brands fa-r-project"></i>
+              <h2>PROJECT</h2>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            src="https://foyr.com/learn/wp-content/uploads/2021/10/rules-for-interior-designers.png"
+            alt="#"
+          />
+        </div>
+      </div>
+      <div class="box-3">
+        <div class="head">
+          <h1>Complete Interior Design Service</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut <br />labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco
+            <br />laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="pic">
+          <div class="pic-1">
+            <h2>Innavation</h2>
+            <img
+              src="https://www.bhg.com/thmb/lyO5jFBEiGllPagy63eBPkWyEtI=/1280x0/filters:no_upscale():strip_icc()/kohlhepp-house-living-room-wall-art-1bc421e0-913aca1f49ba4b77a3d9fd5895a97d2b.jpg"
+              alt="#"
+            />
+            <p>
+              Sample text. Click to select the text box.<br />
+              Click again or double click to start editing the text.
+            </p>
+            <button id="btn_2" onclick="handleAdd()">more</button>
+          </div>
+          <div class="pic-2">
+            <h2>OUR Work</h2>
+            <img
+              src="https://i.pinimg.com/736x/67/21/62/67216216f19ef4cf6468dcfd82a1ff35.jpg"
+              alt="#"
+            />
+            <p>
+              Sample text. Click to select the text box.<br />
+              Click again or double click to start editing the text.
+            </p>
+            <button id="workers" onclick="handleShowBtn()">more</button>
+          </div>
+          <div class="pic-3">
+            <h2>OUR Vision</h2>
+            <img
+              src="https://www.thespruce.com/thmb/m-rkB5vElqw62fdjXV6kfU5FckA=/3000x0/filters:no_upscale():max_bytes(150000):strip_icc()/artwork-dos-and-donts-1976011-hero-c719edb62b664e77ab843efe235791b3.jpg"
+              alt="#"
+            />
+            <p>
+              Sample text. Click to select the text box.<br />
+              Click again or double click to start editing the text.
+            </p>
+            <button onclick="handleShowButen()">more</button>
+          </div>
+        </div>
+      </div>
+      <div class="invantion" id="new_Page">
+        <div class="close">
+          <i
+            class="fa-solid fa-xmark"
+            id="close_it"
+            onclick="handleCloseBtn()"
+          ></i>
+        </div>
+        <h1>Innvation Detail</h1>
+        <img
+          src="https://www.bhg.com/thmb/lyO5jFBEiGllPagy63eBPkWyEtI=/1280x0/filters:no_upscale():strip_icc()/kohlhepp-house-living-room-wall-art-1bc421e0-913aca1f49ba4b77a3d9fd5895a97d2b.jpg"
+          alt="#"
+        />
+        <p>
+          Sample text. Click to select the text box.<br />
+          Click again or double click to start editing the text.
+        </p>
+        <a
+          href="https://nicepage.com/html-templates/preview/the-full-service-interior-studio-88851?device=desktop"
+        >
+          Click Here</a
+        >
+      </div>
+      <div class="our-work" id="interior_Work">
+        <div class="close">
+          <i
+            class="fa-solid fa-xmark"
+            id="close_iit"
+            onclick="handleSecondBtn()"
+          ></i>
+        </div>
+        <div><h1>OUR WORK</h1></div>
+        <img
+          src="https://i.pinimg.com/736x/67/21/62/67216216f19ef4cf6468dcfd82a1ff35.jpg"
+          alt="#"
+        />
+
+        <p>
+          Sample text. Click to select the text box.<br />
+          Click again or double click to start editing the text.
+        </p>
+        <a
+          href="https://nicepage.com/html-templates/preview/the-full-service-interior-studio-88851?device=desktop"
+          >Click Here</a
+        >
+      </div>
+      <div class="Our-vision" id="Vision_Text">
+        <div class="close">
+          <i
+            class="fa-solid fa-xmark"
+            id="close_it"
+            onclick="handleShowOut()"
+          ></i>
+        </div>
+        <h1>Our Vision</h1>
+        <img
+          src="https://www.thespruce.com/thmb/m-rkB5vElqw62fdjXV6kfU5FckA=/3000x0/filters:no_upscale():max_bytes(150000):strip_icc()/artwork-dos-and-donts-1976011-hero-c719edb62b664e77ab843efe235791b3.jpg"
+          alt="#"
+        />
+        <p>
+          Sample text. Click to select the text box.<br />
+          Click again or double click to start editing the text.
+        </p>
+        <a
+          href="https://nicepage.com/html-templates/preview/the-full-service-interior-studio-88851?device=desktop"
+          >Click Here</a
+        >
+      </div>
+    </div>
+    <footer>
+      <p>condition as term are all aloud so care fully to use this web</p>
+    </footer>
+
+    <script src="tem.js"></script>
+  </body>
+</html>
